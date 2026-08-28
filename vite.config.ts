@@ -6,8 +6,10 @@ export default defineConfig({
   base: "/auradentalstudio/",
   plugins: [
     tanstackStart({
-      spa: {
+      prerender: {
         enabled: true,
+        crawlLinks: true,
+        autoSubfolderIndex: true,
       },
     }),
     tailwindcss(),
