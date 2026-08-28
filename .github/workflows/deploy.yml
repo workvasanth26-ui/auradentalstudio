@@ -29,7 +29,7 @@ jobs:
           bun-version: latest
 
       - name: Install dependencies
-        run: bun install --frozen-lockfile
+        run: bun install --force
 
       - name: Build website
         run: bun run build
