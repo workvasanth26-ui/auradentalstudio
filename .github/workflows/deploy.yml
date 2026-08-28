@@ -42,8 +42,10 @@ jobs:
           ls -la
           echo "=== dist ==="
           ls -la dist || true
-          echo "=== .output ==="
-          ls -la .output || true
+          echo  "=== dist/client ==="
+          ls -la dist/client || true
+          echo  "=== dist/server ==="
+          ls -la dist/server || true
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
